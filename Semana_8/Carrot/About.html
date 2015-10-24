@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Avant Grow</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/animate.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="main-container main-container-about col-md-12 col-sm-12 col-xs-12">
+                    <div class="menu-container">
+                        <i class="fa fa-2x fa-bars"></i>
+                    </div>
+                    </div>
+                     <div class="logo-container">   
+                        <img src="images/logo.png" alt="" class="img-responsive"/>
+                    </div>
+                    <div class="About">
+                        <img src="images/info.png" alt="" class="img-responsive" />
+                    </div>
+                    <div class="social-container col-md-2">
+                        <img src="images/fb.png" alt="" class="img-responsive" />
+                        <img src="images/inst.png" alt="" class="img-responsive" />
+                        <img src="images/tw.png" alt="" class="img-responsive" />
+                    </div>
+                    <div class="menu-content menu-invisible col-md-3">
+                        <div class="menu-item col-md-12">
+                            <a href="file:///Users/Adgedis/Desktop/Chavón/Web/Semana_8/Carrot/index.html">Home</a>
+                        </div>
+                        <div class="menu-item col-md-12">
+                            <a href="file://users/Adgedis/Desktop/Chavón/Web/Semana_8/Carrot/About.html">About</a>
+                        </div>
+                        <div class="menu-item col-md-12">
+                            <a href="file:///Users/Adgedis/Desktop/Chavón/Web/Semana_8/Carrot/Gallery.html">Gallery</a>
+                        </div>
+                        <div class="menu-item col-md-12">
+                            <a href="file:///Users/Adgedis/Desktop/Chavón/Web/Semana_8/Carrot/contact.html">Contact</a>
+                        </div>
+                        <div class="menu-footer col-md-12">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>Login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var menuopen = false;
+            $('.menu-container').click(function() {
+                if (menuopen === false) {
+                    $('.menu-container').addClass('menu-container-visible');
+                    $('.menu-content').addClass('menu-visible');
+                    $('.menu-content').removeClass('menu-invisible');
+                    menuopen = true;
+                } else {
+                    console.log('cerrar');
+                    $('.menu-container').removeClass('menu-container-visible');
+                    $('.menu-content').addClass('menu-invisible');
+                    $('.menu-content').removeClass('menu-visible');
+                    menuopen = false;
+                }
+            });
+        </script>
+    </body>
+</html>

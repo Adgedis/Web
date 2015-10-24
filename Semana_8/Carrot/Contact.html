@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Avant Grow</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/animate.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="main-container main-container-about col-md-12 col-sm-12 col-xs-12">
+                    <div class="menu-container">
+                        <i class="fa fa-2x fa-bars"></i>
+                    </div>
+                    </div>
+                     <div class="logo-container">   
+                        <img src="images/logo.png" alt="" class="img-responsive"/>
+                    </div>
+                         <div class="contact">
+                                    <div class="row">
+                          <div class="col-md-12">
+                            <small><i></i>Add alerts if form ok... success, else error.</i></small>
+                            <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>   
+                            <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+                          </div>
+                          <form role="form" action="" method="post" >
+                            <div class="col-lg-6">
+                              <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+                              <div class="form-group">
+                                <label for="InputName">Your Name</label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                              </div>
+                              <div class="form-group">
+                                <label for="InputEmail">Your Email</label>
+                                <div class="input-group">
+                                  <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required  >
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                              </div>
+                              <div class="form-group">
+                                <label for="InputMessage">Message</label>
+                                <div class="input-group"
+                            >
+                                  <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                              </div>
+                              <div class="form-group">
+                                <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                                  <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                              </div>
+                              <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                            </div>
+                          </form>
+                          <hr class="featurette-divider hidden-lg">
+                          <div class="col-lg-5 col-md-push-1">
+                            <address>
+                            <h3>Office Location</h3>
+                            <p class="lead"><a href="https://www.google.com/maps/place/Altos+de+Chavon+of+Casa+de+Campo,+La+Romana+22000,+Dominican+Republic/@18.4217434,-68.8916802,18z/data=!3m1!4b1!4m2!3m1!1s0x8ea8ab445a990031:0x5805392f754bef3f">Avant Grow<br>
+                        Altos de Chavón, D.R 20301</a><br>
+                              Phone: XXX-XXX-XXXX<br>
+                              Fax: XXX-XXX-YYYY</p>
+    </address>
+  </div>
+</div>
+</div>
+                    <div class="social-container col-md-2">
+                        <img src="images/fb.png" alt="" class="img-responsive" />
+                        <img src="images/inst.png" alt="" class="img-responsive" />
+                        <img src="images/tw.png" alt="" class="img-responsive" />
+                    </div>
+                    <div class="menu-content menu-invisible col-md-3">
+                        <div class="menu-item col-md-12">
+                            <a href="file:///Users/Adgedis/Desktop/Chavón/Web/Semana_8/Carrot/index.html">Home</a>
+                        </div>
+                        <div class="menu-item col-md-12">
+                            <a href="file:///Users/Adgedis/Desktop/Chavón/Web/Semana_8/Carrot/about.html">About</a>
+                        </div>
+                        <div class="menu-item col-md-12">
+                            <a href="file:///Users/Adgedis/Desktop/Chavón/Web/Semana_8/Carrot/gallery.html">Gallery</a>
+                        </div>
+                        <div class="menu-item col-md-12">
+                            <a href="">Contact</a>
+                        </div>
+                        <div class="menu-footer col-md-12">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span>Login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            var menuopen = false;
+            $('.menu-container').click(function() {
+                if (menuopen === false) {
+                    $('.menu-container').addClass('menu-container-visible');
+                    $('.menu-content').addClass('menu-visible');
+                    $('.menu-content').removeClass('menu-invisible');
+                    menuopen = true;
+                } else {
+                    console.log('cerrar');
+                    $('.menu-container').removeClass('menu-container-visible');
+                    $('.menu-content').addClass('menu-invisible');
+                    $('.menu-content').removeClass('menu-visible');
+                    menuopen = false;
+                }
+            });
+        </script>
+                </div>
+                   <!-- Page Content -->
+    
+    </body>
+</html>
