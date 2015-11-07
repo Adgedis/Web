@@ -1,0 +1,51 @@
+.html {
+  font-family: 'helvetica neue' , sans-serif;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5; 
+} 
+.boton-landing { 
+  position: relative;
+    left: 300px;
+}
+.img-landing{
+  height: 100%;
+}
+.jumbotron h1 {
+  color: white;
+}
+.jumbotron p {
+  color: white;
+}
+.jumbotron{
+  background: url(../images/bg-download.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+}
+.process {
+  background-image: url(images/desplegable.png);
+  background-repeat: no-repeat;
+}
+
+.img-landing img {
+    position: fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;;
+}
+
+.craft{
+  background-image: url(../images/desplegable.png);
+  background-repeat: no-repeat;
+}
